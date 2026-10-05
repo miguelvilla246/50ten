@@ -42,6 +42,27 @@ body.page-fade-in > :not(.nav):not(script){animation:content-crossfade-in .46s c
   .mobile-menu .btn{display:flex;margin-top:18px;padding:15px 18px;background:var(--sage);color:var(--navy);border:0;border-radius:5px;justify-content:center}
   body.menu-open{overflow:hidden}
 }
+/* 50Ten mobile visual refinement */
+@media(max-width:800px){
+  .nav,.nav.inner{background:var(--brand-white)!important;color:var(--brand-navy)!important;border-bottom:1px solid var(--neutral-200)!important}
+  .nav .wrap{height:96px!important}
+  .brand img{width:138px!important;height:64px!important;filter:none!important}
+  .mobile-menu-btn,.mobile-toggle{background:var(--brand-navy)!important;border:1px solid var(--brand-navy)!important;color:var(--brand-white)!important;box-shadow:0 5px 16px rgba(10,29,55,.16)!important}
+  .mobile-menu-btn span,.mobile-toggle span{background:var(--brand-white)!important}
+  .mobile-menu{background:var(--brand-navy)!important;color:var(--brand-white)!important;opacity:1!important;box-shadow:0 18px 38px rgba(10,29,55,.2)!important}
+  .mobile-menu a{color:var(--brand-white)!important;border-color:rgba(255,255,255,.22)!important}
+  .mobile-menu a:after{color:var(--brand-silver)!important}
+  .mobile-menu .mobile-cta,.mobile-menu a:last-child{color:var(--brand-navy)!important;background:var(--brand-silver)!important;border-color:var(--brand-silver)!important}
+  main>section:not(.hero):not(.page-hero):not(.dark):not(.cta):nth-of-type(even){background:var(--neutral-050)}
+  main>section:not(.hero):not(.page-hero):not(.dark):not(.cta):nth-of-type(odd){background:var(--brand-white)}
+  main>section:not(.hero):not(.page-hero):not(.dark):not(.cta){border-top:1px solid var(--neutral-200)}
+  main>section+section{margin-top:0}
+  .service-row{padding-top:72px!important;padding-bottom:72px!important;border-top:1px solid var(--neutral-200)!important}
+  .service-row:nth-child(even){background:var(--neutral-050)!important}
+  .service-row:nth-child(odd){background:var(--brand-white)!important}
+  .service-row:first-child{border-top:0!important}
+}
+
 </style></head><body><header class="nav inner"><div class="wrap"><a class="brand" href="index.html"><img src="assets/images/50ten-logo.png" alt="50Ten Facilities Services"></a><nav class="navlinks"><a href="services.html">Services</a><a href="industries.html">Industries</a><a href="approach.html">Our Approach</a><a href="about.html">About</a><a href="service-area.html">Service Area</a></nav><a class="btn btn-primary" href="assessment.html">Request an Assessment</a><button class="mobile-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-navigation"><span></span></button></div></header><main><section class="page-hero"><div class="wrap"><div class="crumb">Facility Assessment</div><h1>Thank you. We received your request.</h1><p>Your facility details have been submitted to 50Ten Facilities Services. We’ll review the information and follow up to discuss the right next step.</p><div class="actions" style="margin-top:34px"><a class="btn btn-primary" href="index.html">Return to homepage</a><a class="btn btn-ghost" href="services.html">Explore services</a></div></div></section><section><div class="wrap"><div class="split"><div><div class="kicker">What happens next</div><h2 class="title">A thoughtful response starts with understanding the facility.</h2></div><div><p class="lead">We’ll review the information you shared, consider the facility type, service needs and priorities, and then reach out to continue the conversation.</p><div class="proof-list" style="margin-top:32px"><div class="proof-row"><span>01</span><div><b>We review your request</b><p>Your facility details help us understand the scope before we connect.</p></div></div><div class="proof-row"><span>02</span><div><b>We discuss the facility</b><p>We’ll clarify priorities, timing and service expectations.</p></div></div><div class="proof-row"><span>03</span><div><b>We define the next step</b><p>If there’s a fit, we’ll determine the appropriate assessment and service-planning process.</p></div></div></div></div></div></div></section></main><footer class="footer"><div class="wrap"><div class="footer-grid"><div><img src="assets/images/50ten-logo.png" alt="50Ten Facilities Services"><p>Commercial cleaning, managed properly.<br><strong style="color:var(--brand-white)">Defined. Delivered. Accountable.</strong></p></div><div><h4>Services</h4><a href="services.html">Commercial Cleaning</a><a href="services.html#programs">Service Programs</a><a href="services.html#projects">Project Services</a></div><div><h4>Company</h4><a href="approach.html">Our Approach</a><a href="industries.html">Industries</a><a href="about.html">About</a></div><div><h4>Start</h4><a href="assessment.html">Facility Assessment</a><a href="service-area.html">Service Area</a></div></div><div class="copy">© 2026 50Ten Facilities Services.</div></div></footer><script>
 document.querySelectorAll('form[data-demo]').forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();const b=form.querySelector('button');b.textContent='Request received — thank you';b.disabled=true;}));
 
